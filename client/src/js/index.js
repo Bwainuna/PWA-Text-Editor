@@ -1,7 +1,6 @@
-// client/src/index.js
 import { Workbox } from 'workbox-window';
 import Editor from './editor';
-import { putDb, getDb } from './database';
+import './database';
 import '../css/style.css';
 
 const main = document.querySelector('#main');
@@ -23,16 +22,6 @@ const editor = new Editor();
 if (typeof editor === 'undefined') {
   loadSpinner();
 }
-
-document.addEventListener('blur', async () => {
-  const content = /* Get your content from the DOM */;
-  await putDb(content);
-});
-
-document.addEventListener('DOMContentLoaded', async () => {
-  const notes = await getDb();
-  // Render your notes in the editor
-});
 
 // Check if service workers are supported
 if ('serviceWorker' in navigator) {
