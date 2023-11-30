@@ -36,7 +36,7 @@ THEN I should have proper build scripts for a webpack application
 
 Deployment and Repo Links
 Repo: https://github.com/Bwainuna/PWA-Text-Editor
-Deployment: 
+Deployment: https://pwa-text-editor-production-040b.up.railway.app/
 
 Sources
 ChatGPT by OpenAI @ https://openai.com/blog/chatgpt
